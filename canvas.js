@@ -25,10 +25,17 @@ function deplacerGauche(){
 
 
     
+    console.log(dimensions[0]);
     
    
    
     
     dimensions[0]-= 10
+    
     context.fillRect(...dimensions)
+}
+
+function deplacerHaut(){
+
+    dimensions[1]-= 10
 }
