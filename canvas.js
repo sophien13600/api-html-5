@@ -11,34 +11,29 @@ function clearCanvas() {
    
 }
 function deplacerDroite(){
-
-
-    
-    
     context.clearRect(...dimensions)
-   
-    
     dimensions[0]+=10
     context.fillRect(...dimensions)
 }
 function deplacerGauche(){
-
-
-    
     console.log(dimensions[0]);
-    
-   
-   
-    
+    context.clearRect(...dimensions)
     dimensions[0]-= 10
-    
     context.fillRect(...dimensions)
 }
 
-function deplacerHaut(){
-
-    dimensions[1]-= 10
+function deplacerBas(){
+    context.clearRect(...dimensions)
+    dimensions[1]+= 10
+    context.fillRect(...dimensions)
 }
+function deplacerHaut(){
+    context.clearRect(...dimensions)
+    dimensions[1]-= 10
+    context.fillRect(...dimensions)
+    
+}
+
 /**
  * 
  * 
