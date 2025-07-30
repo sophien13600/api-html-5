@@ -14,23 +14,26 @@
     <canvas id="canvas">
         
     </canvas>
-    <div>
+    <div class="pad">
         <button onclick="clearCanvas()">
             Clear
         </button>
-        <button onclick ="deplacerGauche()">
-            <- Deplacer 
-        </button>
-        <button onclick ="deplacerDroite()">
-            Deplacer ->
-        </button>
-        <button onclick ="deplacerHaut()">
-            Deplacer &uarr; 
 
-        </button>
-        <button onclick ="deplacerBas()">
-            Deplacer &darr;
-        </button>
+        <div class ="deplacement">
+            <button class="g" onclick ="deplacerGauche()">
+                &#8592; 
+            </button>
+            <button class="d" onclick ="deplacerDroite()">
+                &#8594;
+            </button>
+            <button class="h" onclick ="deplacerHaut()">
+             &uarr; 
+    
+            </button>
+            <button class="b" onclick ="deplacerBas()">
+                &darr;
+            </button>
+        </div>
     </div>
 </body>
 
