@@ -1,0 +1,17 @@
+#container {
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+#container>div:first-child {
+    background-color: teal;
+}
+
+#container>div:nth-child(2) {
+    background-color: goldenrod;
+}
+
+#container>div {
+    width: 50%;
+    text-align: center;
