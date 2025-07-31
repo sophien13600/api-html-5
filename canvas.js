@@ -3,6 +3,8 @@ const context = div.getContext('2d')
 
 context.fillStyle = 'blue'
 const dimensions = [20, 20, 100, 20]
+const initialColor = 'blue'
+
 
 
 context.fillRect(...dimensions)
@@ -11,10 +13,31 @@ function clearCanvas() {
    
 }
 function deplacerDroite(){
+
+    console.log(10+ dimensions[0] + dimensions[2], div.width);
+
+    if (10 + dimensions[0] + dimensions[2] <= div.width) {
+        context.clearRect(...dimensions)
+
+        dimensions[0] += 10
+        context.fillRect(...dimensions)
+        console.log(dimensions);
+    }
+    else {
+
+        changeColor('red')
+        setTimeout(
+            () => changeColor(),
+            2000
+        )
+    }
+}
+function changeColor(color = initialColor) {
     context.clearRect(...dimensions)
-    dimensions[0]+=10
+    context.fillStyle = color
     context.fillRect(...dimensions)
 }
+
 function deplacerGauche(){
     console.log(dimensions[0]);
     context.clearRect(...dimensions)

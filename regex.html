@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+    <script src ="./regex.js" defer></script>
+</head>
+
+<body>
+    <h1>Regex</h1>
+    <div>
+        <label for="nom">Nom avec une première lettre en majuscule</label>
+        <input type="text" id="nom">
+        <button onclick ="checkNom()">Vérifier</button>
+    </div>
+    <div>
+        <label for="texte">Texte commençant et se terminant par une majusculue</label>
+        <input type="text" id="texte">
+        <button onclick="checkTexte()">Vérifier</button>
+    </div>
+    <div>
+        <label for="nombre">Nombre commençant par 1 ou 2</label>
+        <input type="text" id="nombre">
+        <button onclick="checkNombre()">Vérifier</button>
+    </div>
+    <div>
+        <label for="tel">Numero de telephone mobile français</label>
+        <input type="number" id="tel">
+        <button onclick="checkTel()">Vérifier</button>
+    </div>
+     <div>
+        <label for="mail">Adresse mail</label>
+        <input type="text" id="mail">
+        <button onclick="checkMail()">Vérifier</button>
+    </div>
+
+</body>
+
+</html>
